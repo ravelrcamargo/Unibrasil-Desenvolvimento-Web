@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Produtos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        table thead{
+           
+            background-color: saddlebrown;
+        }
+        table thead th{
+            border-bottom: solid 2px red;
+            border-left: solid 2px red;
+        }
+        table tbody{
+            background-color: skyblue;           
+        }
+        table tbody td{
+            border-bottom: solid 1px green;
+            border-left: solid 1px  green;
+        }
+        table tfoot{
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site teste</h1><!--Css inline dentro da tag não recomendado-->
+        <nav>     
+            <a href="https:google.com" target="_blank">Google</a>  
+            <a style="text-decoration: none; color: black;" href="/">Inicial</a> 
+            <a href="/contatos.html">Contato</a><!--com a / siginificA QUE POSSO NAVEGAR DENTRO DE MEU PROPRIO SITE-->
+            <a href="/sobre.html">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Lista</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>RA</th><!--coluna 1 -->
+                    <th>Nome</th><!--coluna 2-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td><!--linha 1-->
+                    <td>R</td>
+                </tr>
+                <tr>
+                     <td>456</td>
+                     <td>tu</td>
+                 </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        Rodapé com links
+    </footer>
+    
+</body>
+</html>

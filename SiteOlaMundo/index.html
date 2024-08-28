@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula HTML</title>
+
+    <style>
+        *{/* essa notação asterisco muda pra todo o site*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #div-curso-engsoft h1{ /*id# quando ha uma tag especifica */
+                                /*pode ser usado e reaproveitado*/
+            color: chartreuse;
+            background-color: coral;
+            
+        }
+        .fundo-amarelo{
+            background-color: yellow;
+        }
+        .curso-item{
+            background-color: yellow;
+            color: blue;
+        }
+        .curso-item p{
+            padding: 15px;
+            margin: 15px;
+            background-color: white;
+            font-style: italic;
+            border: solid 1px orange;
+        }
+        section div h1{
+            text-align: center;
+            color: grey;
+            background-color: blue;
+            font-family: Arial;
+        }
+        h1{
+            color: blue;
+            font-family: Arial;
+        }
+
+        nav a{                    /*somente as tags a que são filhas da nav*/
+            text-decoration: none;/*metodo de estilo no HEAD */
+            color: black;
+        }
+        nav a:hover{
+            font-weight: bold;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--nav == link para navegação/ article == artigo / section == sessão especifica/ 
+    aside == coisas por fora do conteudo mas no fim todas sao uma div maas facilita em SEO e manutrenção-->
+    <header>
+        <h1>Site teste</h1><!--Css inline dentro da tag não recomendado-->
+        <nav>     
+            <a href="https:google.com" target="_blank">Google</a>  
+            <a style="text-decoration: none; color: black;" href="/">Inicial</a> 
+            <a href="/contatos.html">Contato</a><!--com a / siginificA QUE POSSO NAVEGAR DENTRO DE MEU PROPRIO SITE-->
+            <a href="/sobre.html">Sobre</a>
+            <a href="/produtos.html">Produtos</a>
+        </nav>
+    </header>
+    <main>conteudo 
+        <div>
+            <!--disvisão sessão da pagina-->Teste
+        </div>
+        <div id="div-curso-engsoft">
+            <h1>Eng Software</h1>
+        </div>
+        <div class="fundo-amarelo">
+            <h1>Eng mec</h1>
+        </div>
+        <div>teste 3</div>
+
+        <h1>Cursos</h1>
+
+        <p>Paragrafo Lorem ipsum
+            dolor sit amet consectetur
+            adipisicing elit. <span>quos,
+            rerum voluptatum</span> delectus,
+            laboriosam accusantium porro consectetur
+            sapiente fuga mollitia quis dolor magnam
+            nulla hic praesentium consequatur eaque nemo iure!</p>
+    </main>
+    <footer>Rodapé com links</footer>
+
+
+    <span>
+        <!--serve pra quando quero isolar um texto solto-->texto 123
+    </span>
+</body>
+
+</html>
