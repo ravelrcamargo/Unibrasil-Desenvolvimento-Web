@@ -1,0 +1,36 @@
+header{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+nav{
+    align-items: center;
+    justify-content: space-around;
+    /* flex: 0 0 auto; */
+}
+nav a{  
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    background-color:coral;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main div{
+    flex: 1 1 160px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
+    
+
+}
+main div img{
+    
+}
+main div p{
+    display: flex;
+}
